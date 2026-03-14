@@ -1,0 +1,50 @@
+Playtesting bugs:
+- I see, email rate limit (3 within a period of time) will cause problem later, but its fine now
+- Still don't have my own webpage to redirect them yet (is somewhat ignorable for now)
+
+Resolved:
+
++ Still no auto login
++ Keyboard box blocking UI
++ Add a refresh page function
++ "Show password" button
++ Password requirement for secure strength
++ If player picks 'no' when system asks if they want to be player, show them the Sung Jin Woo meme pic and text "No U" and send them to the home page anyways
++ Reset stats button (change it to 5lvls), put details
++ Nvm quest descriptions just.. doesn't work at all
++ Custom quest shouldn't be able to be un-checked, and when completed show a timer until it disappears (in hours and minutes)
++ Toast notification seem to only work once/long cooldown (bad for negative habits undos)
++ Pool randomizer is definitely not working, or at least not random enough.
++ Daily quest picking pool goes under the stat requirement? (eg. I have 25 str and I have unlocked easy+ physical quests, but I still get easy quests) Design should be that once a stat threshold is reached, lower tier quest of that attribute is discarded from the pool.
++ Custom quest creation attempt not resetting
++ Habit should reset on daily reset, not 24h timer, Positive habit tracker does not reset daily
++ Missed daily quests does not show on the popup (should combine with missed custom quests)
++ 0n signup, popup keyboard blocks 'confirm password' textbox
++ Completed custom quest expiration does not work properly, shown NULL on expires_at even though completed_at is filled in the database
+
+
+prompt engineering (for Cursor, and for Claude)
+- Always ask it to read all files and directories to understand the system on a new chat/agent
+- Ask it to log all code changes as text so Claude as project 'manager' understand what codes are implemented and existing.
+- Maybe mention that Cursor agent will act as the main developer, and it will work together alongside Claude anthropic models as the code and system flow manager, and that both should interact if necessary (context, extra details, etc.). Meanwhile me, the bridge between the two agents will be the creative director on how the system should work and function as the software.
+- Make sure that it knows the workflow. This means that it is working full-stack with Supabase as its database and backend, and Expo as frontend. Creating functions should consider which method is most efficient and error-proof.
+- There is a __Dev__ function in expo. Utilize when necessary for easier testing
+
+
+What I've learned from my projects:
+1. Cursor is an amazing coding workspace
+2. Claude >> ChatGPT
+3. AI is smart. The prompts/user has to be smart as well.
+4. CLEAR PROJECT SYSTEMFLOW. Make the design first. UI. How the system should look and work. How database and backend connect towards it. Having a very clear project design really helps.
+5. Since new ideas/suggestions always come up during development, make things modular. Tidy. And if possible, very rough system first before committing.
+6. Frontend is anything that the user interacts with, including how the system behaves. Backend is everything database, how it stores and retrieves user data, for the 'online' behaviour so its NOT local and mainly for: keep track of something.
+7. Expo; react native, is frontend. Mostly for mobile UI
+8. Supabase, a goated free database and serveless functions, handles backend very well
+9. API is a key. When we want to use a website/service/something thats already existent automatically (via code, no manual human interference) we use API keys for the code to access the service/website. AI API keys, something like gemini, it just means that im prompting the gemini LLM model service and it sends me back an answer (like you open chatGPT, paste your assignment, and it gives you an output. But instead it happens via code.). Thinking about it, its basically a bypass to the "are you a robot" verification.
+
+
+
+
+
+
+

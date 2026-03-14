@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "True Levelling",
+    "slug": "arise",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/TrueLevelling_Logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/sigma.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0f1e"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/TrueLevelling_Logo.png",
+        "backgroundImage": "./assets/TrueLevelling_Logo.png",
+        "monochromeImage": "./assets/TrueLevelling_Logo.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.vytra.truelevelling"
+    },
+    "web": {
+      "favicon": "./assets/TrueLevelling_Logo.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "138d2532-c451-45b4-8306-fc1600a0bb4e"
+      }
+    }
+  }
+}

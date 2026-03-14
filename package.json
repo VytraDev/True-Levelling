@@ -1,0 +1,36 @@
+{
+  "name": "arise",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@google/genai": "^1.44.0",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "@supabase/supabase-js": "^2.97.0",
+    "expo": "^55.0.5",
+    "expo-constants": "~55.0.7",
+    "expo-linking": "~55.0.7",
+    "expo-router": "~55.0.2",
+    "expo-status-bar": "~55.0.4",
+    "nativewind": "^4.2.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.2",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-web": "^0.21.0",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "@types/react-native": "^0.72.8",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
